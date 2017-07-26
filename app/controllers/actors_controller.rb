@@ -40,7 +40,7 @@ class ActorsController < ApplicationController
     @name = actor.name
     @bio = actor.bio
     @image_url = actor.image_url
-    actor.save
+
   end
 
   def update_row
@@ -58,6 +58,7 @@ class ActorsController < ApplicationController
     @bio = actor.bio
     @image_url = actor.image_url
     render("show")
+    #redirect '/actors/' + actor.id
   end
 
   def destroy

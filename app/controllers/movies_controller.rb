@@ -28,12 +28,12 @@ class MoviesController < ApplicationController
     @id = movie.id
     movie.save
 
-    # @title = movie.title
-    # @year = movie.year
-    # @duration = movie.duration
-    # @description = movie.description
-    # @image_url = movie.image_url
-    # @director_id = movie.director_id
+    @title = movie.title
+    @year = movie.year
+    @duration = movie.duration
+    @description = movie.description
+    @image_url = movie.image_url
+    @director_id = movie.director_id
     render("show")
   end
 
@@ -46,7 +46,7 @@ class MoviesController < ApplicationController
     @description = movie.description
     @image_url = movie.image_url
     @director_id =movie.director_id
-    movie.save
+
   end
 
   def update_row
